@@ -1,0 +1,11 @@
+﻿Topic,Name,Hours,Victor Manon,Juan Alvarado,Roberto Leyva,Mauricio Paletta,Yerly Flores,Jaime Lopez,Jorge Rodriguez,Jose Aguilera,Luis Guadarrama,Pedro Hernandez,Maria Mirafuentes,Roberto Vera,Octavio Silva,Fernando Ruiz,Ivan Olmos,Israel Tabarez
+1,Boolean Algebra and Logic Gates,15,,,,,X,X,,,,,,,,,,X
+2,Combinational Logic,15,,,,,X,X,,,,,,,,,,X
+3,Synchronous Sequential Logic,5,,,,,X,X,,,,,,,,,,X
+4,Registers and Counters,5,,,,,X,X,,,,,,,,,,X
+5,Asynchronous Sequential Logic,5,,,,,X,X,,,,,,,,,,X
+6,Analysis and Design of Databases,20,X,X,X,X,,,,X,,X,,,,,,
+7,Introduction to Interactive Design,10,X,X,X,X,,,,X,,,,,,,,
+8,Management of Resources of a Computer System,15,,,,,,,,X,,X,,,,,,X
+9,Internet of Things,30,,,,,,,,,,,,,,X,,X
+,,120,,,,,,,,,,,,,,,,

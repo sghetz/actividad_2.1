@@ -1,1 +1,0 @@
-# Reto Paletowski TIMETABLING PROBLEM
