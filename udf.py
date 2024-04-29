@@ -47,6 +47,4 @@ TI3005B,Digital Transformation of Civil Society Organizations,6,X,,,8,120
 """
 
 uf_data = parse_csv(csv_text)
-print(uf_data)
-""" with open("data.csv", "w+") as f:
-    f.write(json.dumps(uf_data)) """
+

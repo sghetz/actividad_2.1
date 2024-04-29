@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 def parse_availability(input_string):
@@ -49,14 +50,19 @@ def read_and_parse_availability_from_csv(csv_file):
         # Add the parsed availability schedule to the dictionary
         row['availability'] = availability_schedule
 
-    # Convert the DataFrame to a dictionary
+    # Convert the DataFrame to a list of dictionaries
     data_dict = df.to_dict(orient='records')
 
     return data_dict
 
 # Example CSV file
-csv_file = "C:\\Users\\sghetz\\Desktop\\python_uni\\reto_palettowski\\replic\\Profesores.csv"
+
+dirname = os.path.dirname(__file__)
+csv_file = os.path.join(dirname, "professor.csv")
+
+csv_file = "C:\\Users\\sghet\\OneDrive\\Desktop\\reto_papaletowski\\replic\\professor.csv"
 
 # Read and parse the availability data from the CSV file
 availability_data = read_and_parse_availability_from_csv(csv_file)
 print(availability_data)
+

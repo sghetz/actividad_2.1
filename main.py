@@ -1,9 +1,9 @@
 import random
-import data_format
+import udf_data_format
+import professor_data_format
 
-professors = data_format.professors
-
-UFS = data_format.UFS
+professors = professor_data_format.professors
+UDF = udf_data_format.UDF
 
 schedules = {
     "Monday": ["07-09", "09-11", "11-13", "15-17", "17-19", "19-21"],
@@ -18,7 +18,7 @@ max_hours_per_week = 20
 
 # Define the individual (chromosome) representation
 def create_individual():
-    return {uf: (random.choice(list(professors.keys())), random.choice(list(schedules.keys()))) for uf in UFS}
+    return {uf: (random.choice(list(professors.keys())), random.choice(list(schedules.keys()))) for uf in UDF}
 
 # Define the population
 def create_population(population_size):
@@ -45,9 +45,9 @@ def selection(population, tournament_size):
 
 # Define the crossover method (single-point crossover)
 def crossover(parent1, parent2):
-    crossover_point = random.randint(1, len(UFS) - 1)
+    crossover_point = random.randint(1, len(UDF) - 1)
     child = {}
-    for idx, uf in enumerate(UFS):
+    for idx, uf in enumerate(UDF):
         if idx < crossover_point:
             child[uf] = parent1[uf]
         else:
@@ -57,7 +57,7 @@ def crossover(parent1, parent2):
 # Define the mutation method (random mutation)
 def mutation(individual, mutation_rate):
     mutated_individual = individual.copy()
-    for uf in UFS:
+    for uf in UDF:
         if random.random() < mutation_rate:
             mutated_individual[uf] = (random.choice(list(professors.keys())), random.choice(list(schedules.keys())))
     return mutated_individual
