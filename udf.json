@@ -1,0 +1,210 @@
+[
+    {
+        "Key": "TC1027",
+        "subject_name": "Business Programming",
+        "UDC": 1,
+        "Semester": 1,
+        "Hours": 20,
+        "period": "PMT2"
+    },
+    {
+        "Key": "TC1028",
+        "subject_name": "Computational Thinking for Engineering",
+        "UDC": 2,
+        "Semester": 1,
+        "Hours": 40,
+        "period": "PMT4"
+    },
+    {
+        "Key": "TC1029",
+        "subject_name": "Computational Thinking and Programming",
+        "UDC": 3,
+        "Semester": 1,
+        "Hours": 60,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TC1030",
+        "subject_name": "Object Oriented Programming",
+        "UDC": 1,
+        "Semester": 2,
+        "Hours": 20,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TC1031",
+        "subject_name": "Programming of Data Structures and Fundamental Algorithms",
+        "UDC": 3,
+        "Semester": 3,
+        "Hours": 60,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TC1032",
+        "subject_name": "Modeling of Minimum Systems and Computational Architectures",
+        "UDC": 1,
+        "Semester": 3,
+        "Hours": 20,
+        "period": "PMT2"
+    },
+    {
+        "Key": "TC1033",
+        "subject_name": "Object Oriented Computational Thinking",
+        "UDC": 1,
+        "Semester": 1,
+        "Hours": 20,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TC1001B",
+        "subject_name": "Principles of Programming for Social Sciences",
+        "UDC": 3,
+        "Semester": 1,
+        "Hours": 60,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TC1002B",
+        "subject_name": "Technological Tools for Social Sciences",
+        "UDC": 3,
+        "Semester": 4,
+        "Hours": 60,
+        "period": "PMT2"
+    },
+    {
+        "Key": "TC1003B",
+        "subject_name": "Engineering Modeling with Computational Mathematics",
+        "UDC": 3,
+        "Semester": 2,
+        "Hours": 60,
+        "period": "PMT1"
+    },
+    {
+        "Key": "TC1004B",
+        "subject_name": "Implementation of Internet of Things",
+        "UDC": 6,
+        "Semester": 3,
+        "Hours": 120,
+        "period": "PMT5"
+    },
+    {
+        "Key": "TC2037",
+        "subject_name": "Implementation of Computational Methods",
+        "UDC": 3,
+        "Semester": 4,
+        "Hours": 60,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TC2038",
+        "subject_name": "Analysis and Design of Advanced Algorithms",
+        "UDC": 3,
+        "Semester": 5,
+        "Hours": 60,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TC2005B",
+        "subject_name": "Software Construction and Decision Making",
+        "UDC": 8,
+        "Semester": 4,
+        "Hours": 160,
+        "period": "PMT4"
+    },
+    {
+        "Key": "TC2006B",
+        "subject_name": "Interconnection of Devices",
+        "UDC": 4,
+        "Semester": 4,
+        "Hours": 80,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TC2007B",
+        "subject_name": "Integration of Computer Security in Networks and Software Systems",
+        "UDC": 8,
+        "Semester": 5,
+        "Hours": 160,
+        "period": "PMT4"
+    },
+    {
+        "Key": "TC2008B",
+        "subject_name": "Modeling of Multi-agent Systems with Computational Graphics",
+        "UDC": 4,
+        "Semester": 5,
+        "Hours": 80,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TC3001B",
+        "subject_name": "Software Development",
+        "UDC": 18,
+        "Semester": 6,
+        "Hours": 360,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TC3002B",
+        "subject_name": "Development of Advanced Applications of Computational Sciences",
+        "UDC": 6,
+        "Semester": 8,
+        "Hours": 120,
+        "period": "PMT2"
+    },
+    {
+        "Key": "TC3003B",
+        "subject_name": "Implementation of Wide Area Networks and Distributed Services",
+        "UDC": 6,
+        "Semester": 8,
+        "Hours": 120,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TC3004B",
+        "subject_name": "Software Systems Planning",
+        "UDC": 6,
+        "Semester": 8,
+        "Hours": 120,
+        "period": "PMT1"
+    },
+    {
+        "Key": "TC3005B",
+        "subject_name": "Development and Implementation of Software Systems",
+        "UDC": 12,
+        "Semester": 8,
+        "Hours": 240,
+        "period": "PMT5"
+    },
+    {
+        "Key": "TI1015",
+        "subject_name": "Software Requirements Analysis",
+        "UDC": 1,
+        "Semester": 3,
+        "Hours": 20,
+        "period": "PMT3"
+    },
+    {
+        "Key": "TI3001C",
+        "subject_name": "Data Analytics and Artificial Intelligence Tools I",
+        "UDC": 7,
+        "Semester": 7,
+        "Hours": 140,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TI3002C",
+        "subject_name": "Data Analytics and Artificial Intelligence Tools II",
+        "UDC": 13,
+        "Semester": 7,
+        "Hours": 260,
+        "period": "PMT6"
+    },
+    {
+        "Key": "TI3005B",
+        "subject_name": "Digital Transformation of Civil Society Organizations",
+        "UDC": 6,
+        "Semester": 8,
+        "Hours": 120,
+        "period": "PMT1"
+    }
+]
