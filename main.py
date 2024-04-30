@@ -1,9 +1,13 @@
 import random
-import udf_data_format
-import professor_data_format
+import json
 
-professors = professor_data_format.professors
-UDF = udf_data_format.UDF
+file_paths = ['json\\udf_data_format.json', 'json\\professor_data_format.json']
+UDF = {}
+PROFESSORS = {}
+
+with open(file_paths[0], 'r') as udf_file, open(file_paths[1], 'r') as prof_file:
+    UDF = json.load(udf_file)
+    PROFESSORS = json.load(prof_file)
 
 schedules = {
     "Monday": ["07-09", "09-11", "11-13", "15-17", "17-19", "19-21"],
@@ -18,7 +22,7 @@ max_hours_per_week = 20
 
 # Define the individual (chromosome) representation
 def create_individual():
-    return {uf: (random.choice(list(professors.keys())), random.choice(list(schedules.keys()))) for uf in UDF}
+    return {uf: (random.choice(list(PROFESSORS.keys())), random.choice(list(schedules.keys()))) for uf in UDF}
 
 # Define the population
 def create_population(population_size):
@@ -26,8 +30,8 @@ def create_population(population_size):
 
 # Define the fitness function (cost function)
 def fitness(individual):
-    professor_hours_per_day = {prof: 0 for prof in professors}
-    professor_hours_per_week = {prof: 0 for prof in professors}
+    professor_hours_per_day = {prof: 0 for prof in PROFESSORS}
+    professor_hours_per_week = {prof: 0 for prof in PROFESSORS}
     for uf, (professor, day) in individual.items():
         professor_hours_per_day[professor] += 1
         professor_hours_per_week[professor] += 1
@@ -59,7 +63,7 @@ def mutation(individual, mutation_rate):
     mutated_individual = individual.copy()
     for uf in UDF:
         if random.random() < mutation_rate:
-            mutated_individual[uf] = (random.choice(list(professors.keys())), random.choice(list(schedules.keys())))
+            mutated_individual[uf] = (random.choice(list(PROFESSORS.keys())), random.choice(list(schedules.keys())))
     return mutated_individual
 
 # Define the genetic algorithm

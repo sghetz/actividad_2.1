@@ -15,7 +15,6 @@ class CSVParser:
 
         # Check if "P1", "P2", and "P3" columns exist and create "period" key if they do
         if all(col in df.columns for col in ["P1", "P2", "P3"]):
-            # Period patterns
             pattern_mapping = {
                 "PMT1": ["X", "null", "null"],
                 "PMT2": ["null", "X", "null"],
@@ -24,16 +23,19 @@ class CSVParser:
                 "PMT5": ["null", "X", "X"],
                 "PMT6": ["X", "X", "X"]
             }
-            df["period"] = df[["P1", "P2", "P3"]].apply(lambda x: list(x), axis=1)
+            df["period"] = df[["P1", "P2", "P3"]].apply(lambda x: [key for key, val in pattern_mapping.items() if val == x.tolist()][0] if x.tolist() in pattern_mapping.values() else x, axis=1)
             df.drop(columns=["P1", "P2", "P3"], inplace=True)
-            # Replace the "period" values with the corresponding pattern names according to the stablished rules
-            df["period"] = df["period"].apply(lambda x: [key for key, val in pattern_mapping.items() if val == x][0] if x in pattern_mapping.values() else x)
+
         
         if "maxUdc" in df.columns:
             df["maxUdc"] = pd.to_numeric(df["maxUdc"], errors='coerce').fillna(0).astype(int)
 
-        # Convert the DataFrame to a list of dictionaries
-        data_dict = df.to_dict(orient='records')
+        if "payroll" in df.columns:
+            # Set the "payroll" column as the index
+            df.set_index("payroll", inplace=True)
+
+        # Convert the DataFrame to a dictionary with "payroll" as keys
+        data_dict = df.to_dict(orient='index')
 
         return data_dict
 
@@ -47,11 +49,11 @@ class CSVParser:
 # Example CSV file
 current_dir = os.getcwd()
 professor_csv = os.path.join(current_dir, "replic\\professor.csv")
-udf_csv = os.path.join(current_dir, "replic\\udf.csv")
+udf_csv = os.path.join(current_dir, "replic\\udf_final.csv")
 
 # Create an instance of CSVParser and use it to convert the CSV files to JSON
 professor_csv_parsed = CSVParser(professor_csv)
-professor_csv_parsed.convert_to_json('professor.json')
+professor_csv_parsed.convert_to_json('json\\professor.json')
 
 udf_csv_parsed = CSVParser(udf_csv)
-udf_csv_parsed.convert_to_json('udf.json')
+udf_csv_parsed.convert_to_json('json\\udf.json')

@@ -1,4 +1,4 @@
-﻿Key,subject_name,UDC,P1,P2,P3,Semester,Hours
+﻿key,subject,udc,P1,P2,P3,semester,hours
 TC1027,Business Programming,1,,X,,1,20
 TC1028,Computational Thinking for Engineering,2,X,X,,1,40
 TC1029,Computational Thinking and Programming,3,X,X,X,1,60
