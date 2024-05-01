@@ -1,0 +1,22 @@
+key,subject,group,season,udc,P1,P2,P3,semester,hours
+TC1030,Object Oriented Programming,1,summer,1,,,X,2,20
+TC2005B,Software Construction and Decision Making,1,summer,8,X,X,,4,160
+TC2006B,Device Interconnection,1,summer,4,,,X,4,80
+TC2037,Implementation of Computational Methods,1,summer,3,X,X,X,4,60
+TC1002B,Technological Tools for Social Sciences,1,summer,3,,X,,4,60
+TC3004B,Software Systems Planning,1,summer,6,X,,,8,120
+TC3005B,Development and Implementation of Software Systems,1,summer,12,,X,X,8,240
+TI3005B,Digital Transformation of Civil Society Organizations,1,summer,6,X,,,8,120
+TC3002B,Development of Advanced Applications of Computational Sciences,1,summer,6,,X,,8,120
+TC3003B,Implementation of Wide Area Networks and Distributed Services,1,summer,6,,,X,8,120
+TC1028,Computational Thinking for Engineering,8,winter,2,X,X,,1,40
+TC1033,Object Oriented Computational Thinking,1,winter,1,,,X,1,20
+TC1027,Business Programming,4,winter,1,,X,,1,20
+TC1001B,Principles of Programming for Social Sciences,1,winter,3,,,X,1,60
+TC1031,Data Structures and Fundamental Algorithms Programming,1,winter,3,X,X,X,3,60
+TC1032,Minimum Systems Modeling and Fundamental Architecture,1,winter,1,,X,,3,20
+TC1004B,Implementation of Internet of Things,1,winter,6,,X,X,3,120
+TI1015,Software Requirements Analysis,1,winter,1,,,X,3,20
+TC2038,Advanced Algorithms Analysis and Design,1,winter,3,X,X,X,5,60
+TC2007B,Integration of Information Security in Networks and Software Systems,1,winter,8,X,X,,5,160
+TC2008B,Multi-agent Systems Modeling with Computer Graphics,1,winter,4,,,X,5,80

@@ -45,6 +45,18 @@ class CSVParser:
         j = json.dumps(availability_data, indent=4, default=str)
         with open(json_file, 'w+') as f:
             print(j, file=f)
+    
+    def modify_udf_json_keys(self, json_file):
+        # Read the JSON file
+        with open(json_file, 'r') as f:
+            data = json.load(f)
+
+        # Create a new dictionary with updated keys
+        updated_data = {data[key]["key"]: {k: v for k, v in data[key].items() if k != "key"} for key in data}
+
+        # Write the updated data back to the JSON file
+        with open(json_file, 'w') as f:
+            json.dump(updated_data, f, indent=4, default=str)
 
 # Example CSV file
 current_dir = os.getcwd()
@@ -57,3 +69,4 @@ professor_csv_parsed.convert_to_json('json\\professor.json')
 
 udf_csv_parsed = CSVParser(udf_csv)
 udf_csv_parsed.convert_to_json('json\\udf.json')
+udf_csv_parsed.modify_udf_json_keys('json\\udf.json')

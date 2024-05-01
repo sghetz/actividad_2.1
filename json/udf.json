@@ -1,0 +1,880 @@
+{
+    "TC1030": {
+        "subject": "Object Oriented Programming",
+        "group": 1,
+        "season": "summer",
+        "udc": 1,
+        "semester": 2,
+        "hours": 20,
+        "period": "PMT3",
+        "Professors": [
+            "Victor Manon",
+            "Mauricio Paletta"
+        ]
+    },
+    "TC2005B": {
+        "subject": "Software Construction and Decision Making",
+        "group": 1,
+        "season": "summer",
+        "udc": 8,
+        "semester": 4,
+        "hours": 160,
+        "period": "PMT4",
+        "topic": [
+            {
+                "name": "Agile Methodologies in Software Development",
+                "hours": "4",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Analysis and Design of Software",
+                "hours": "50",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Jose Aguilera",
+                    "Luis Guadarrama",
+                    "Pedro Hernandez"
+                ]
+            },
+            {
+                "name": "Quality in Software",
+                "hours": "8",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            },
+            {
+                "name": "Software Deployment",
+                "hours": "4",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            },
+            {
+                "name": "WEB Development",
+                "hours": "30",
+                "professors": [
+                    "Victor Manon",
+                    "Roberto Vera"
+                ]
+            },
+            {
+                "name": "Transactional System",
+                "hours": "30",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Jose Aguilera",
+                    "Pedro Hernandez"
+                ]
+            },
+            {
+                "name": "Decision Making Process",
+                "hours": "4",
+                "professors": [
+                    "Juan Alvarado",
+                    "Mauricio Paletta",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Video Game Development Process",
+                "hours": "30",
+                "professors": [
+                    "Roberto Leyva"
+                ]
+            }
+        ]
+    },
+    "TC2006B": {
+        "subject": "Device Interconnection",
+        "group": 1,
+        "season": "summer",
+        "udc": 4,
+        "semester": 4,
+        "hours": 80,
+        "period": "PMT3",
+        "topic": [
+            {
+                "name": "Introduction to Data Communications",
+                "hours": "20",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Yerly Flores"
+                ]
+            },
+            {
+                "name": "Physical and Logical Components of a Network",
+                "hours": "30",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Yerly Flores"
+                ]
+            },
+            {
+                "name": "Network Design Strategies and Interconnection Problem Solving",
+                "hours": "30",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Yerly Flores"
+                ]
+            }
+        ]
+    },
+    "TC2037": {
+        "subject": "Implementation of Computational Methods",
+        "group": 1,
+        "season": "summer",
+        "udc": 3,
+        "semester": 4,
+        "hours": 60,
+        "period": "PMT6",
+        "Professors": [
+            "Juan Alvarado",
+            "Jose Aguilera",
+            "Pedro Hernandez"
+        ]
+    },
+    "TC1002B": {
+        "subject": "Technological Tools for Social Sciences",
+        "group": 1,
+        "season": "summer",
+        "udc": 3,
+        "semester": 4,
+        "hours": 60,
+        "period": "PMT2",
+        "topic": [
+            {
+                "name": "Contemporary Dilemmas Addressed by Social Sciences",
+                "hours": "2",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            },
+            {
+                "name": "Public Entrepreneurship, Its Current State and Its Potential",
+                "hours": "2",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            },
+            {
+                "name": "Understanding Emerging Technologies to Solve Social Science Problems",
+                "hours": "6",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            },
+            {
+                "name": "Introduction to Programming and Algorithmic Thinking",
+                "hours": "24",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Projects",
+                "hours": "16",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            },
+            {
+                "name": "Algorithms and Data Structures",
+                "hours": "8",
+                "professors": [
+                    "Victor Manon",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Technology and Public Transformation",
+                "hours": "2",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            }
+        ]
+    },
+    "TC3004B": {
+        "subject": "Software Systems Planning",
+        "group": 1,
+        "season": "summer",
+        "udc": 6,
+        "semester": 8,
+        "hours": 120,
+        "period": "PMT1",
+        "topic": [
+            {
+                "name": "Processes for the Development of Commercial Software",
+                "hours": "12",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            },
+            {
+                "name": "Vision of International Standards for Software Development",
+                "hours": "24",
+                "professors": [
+                    "Juan Alvarado",
+                    "Octavio Silva"
+                ]
+            },
+            {
+                "name": "Initial Management of Software Development Projects",
+                "hours": "24",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Software Requirements",
+                "hours": "30",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Quality of Software in Early Stages",
+                "hours": "30",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            }
+        ]
+    },
+    "TC3005B": {
+        "subject": "Development and Implementation of Software Systems",
+        "group": 1,
+        "season": "summer",
+        "udc": 12,
+        "semester": 8,
+        "hours": 240,
+        "period": "PMT5",
+        "topic": [
+            {
+                "name": "Advanced Management of Software Development Projects",
+                "hours": "20",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Design and Architecture of Software",
+                "hours": "50",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Jose Aguilera",
+                    "Pedro Hernandez"
+                ]
+            },
+            {
+                "name": "Advanced Development of Web Applications",
+                "hours": "60",
+                "professors": [
+                    "Victor Manon",
+                    "Roberto Vera"
+                ]
+            },
+            {
+                "name": "Advanced Databases",
+                "hours": "40",
+                "professors": [
+                    "Victor Manon",
+                    "Mauricio Paletta",
+                    "Pedro Hernandez"
+                ]
+            },
+            {
+                "name": "Software Quality",
+                "hours": "40",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Software Implementation",
+                "hours": "20",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            },
+            {
+                "name": "Project Closure",
+                "hours": "10",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            }
+        ]
+    },
+    "TI3005B": {
+        "subject": "Digital Transformation of Civil Society Organizations",
+        "group": 1,
+        "season": "summer",
+        "udc": 6,
+        "semester": 8,
+        "hours": 120,
+        "period": "PMT1",
+        "topic": [
+            {
+                "name": "Definition and Planning of a Digital Transformation Project",
+                "hours": "30",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama",
+                    "Maria Mirafuentes"
+                ]
+            },
+            {
+                "name": "Implementation of Digital Transformation",
+                "hours": "30",
+                "professors": [
+                    "Juan Alvarado",
+                    "Mauricio Paletta",
+                    "Jose Aguilera",
+                    "Luis Guadarrama",
+                    "Pedro Hernandez",
+                    "Roberto Vera"
+                ]
+            },
+            {
+                "name": "Cloud Computing",
+                "hours": "60",
+                "professors": [
+                    "Roberto Leyva"
+                ]
+            }
+        ]
+    },
+    "TC3002B": {
+        "subject": "Development of Advanced Applications of Computational Sciences",
+        "group": 1,
+        "season": "summer",
+        "udc": 6,
+        "semester": 8,
+        "hours": 120,
+        "period": "PMT2",
+        "topic": [
+            {
+                "name": "Research Methodology",
+                "hours": "20",
+                "professors": [
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Artificial Intelligence",
+                "hours": "40",
+                "professors": [
+                    "Roberto Leyva",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Compilers",
+                "hours": "30",
+                "professors": [
+                    "Mauricio Paletta",
+                    "Jose Aguilera"
+                ]
+            },
+            {
+                "name": "Quantitative Methods and Simulation",
+                "hours": "30",
+                "professors": [
+                    "Pedro Hernandez"
+                ]
+            }
+        ]
+    },
+    "TC3003B": {
+        "subject": "Implementation of Wide Area Networks and Distributed Services",
+        "group": 1,
+        "season": "summer",
+        "udc": 6,
+        "semester": 8,
+        "hours": 120,
+        "period": "PMT3",
+        "topic": [
+            {
+                "name": "Concepts for Network Interconnection",
+                "hours": "10",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Yerly Flores"
+                ]
+            },
+            {
+                "name": "Wide Area Network Concepts",
+                "hours": "16",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Yerly Flores"
+                ]
+            },
+            {
+                "name": "Emerging Technologies for Distributed Systems in Wide Area Networks",
+                "hours": "34",
+                "professors": [
+                    "Roberto Leyva"
+                ]
+            },
+            {
+                "name": "Design and Configuration of Wide Area Networks",
+                "hours": "60",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Yerly Flores"
+                ]
+            }
+        ]
+    },
+    "TC1028": {
+        "subject": "Computational Thinking for Engineering",
+        "group": 8,
+        "season": "winter",
+        "udc": 2,
+        "semester": 1,
+        "hours": 40,
+        "period": "PMT4",
+        "Professors": [
+            "Victor Manon",
+            "Juan Alvarado",
+            "Roberto Leyva",
+            "Mauricio Paletta",
+            "Yerly Flores",
+            "Jose Aguilera",
+            "Pedro Hernandez",
+            "Roberto Vera"
+        ]
+    },
+    "TC1033": {
+        "subject": "Object Oriented Computational Thinking",
+        "group": 1,
+        "season": "winter",
+        "udc": 1,
+        "semester": 1,
+        "hours": 20,
+        "period": "PMT3",
+        "Professors": [
+            "Victor Manon",
+            "Mauricio Paletta"
+        ]
+    },
+    "TC1027": {
+        "subject": "Business Programming",
+        "group": 4,
+        "season": "winter",
+        "udc": 1,
+        "semester": 1,
+        "hours": 20,
+        "period": "PMT2",
+        "Professors": [
+            "Juan Alvarado",
+            "Roberto Leyva",
+            "Mauricio Paletta",
+            "Jaime Lopez",
+            "Jose Aguilera",
+            "Pedro Hernandez",
+            "Roberto Vera"
+        ]
+    },
+    "TC1001B": {
+        "subject": "Principles of Programming for Social Sciences",
+        "group": 1,
+        "season": "winter",
+        "udc": 3,
+        "semester": 1,
+        "hours": 60,
+        "period": "PMT3",
+        "topic": [
+            {
+                "name": "Public Transformation",
+                "hours": "4",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            },
+            {
+                "name": "Intelligence",
+                "hours": "8",
+                "professors": [
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Algorithmic Thinking and Decision Making",
+                "hours": "6",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Roberto Vera"
+                ]
+            },
+            {
+                "name": "Basic Programming Principles for Social Sciences",
+                "hours": "8",
+                "professors": [
+                    "Jorge Rodriguez"
+                ]
+            },
+            {
+                "name": "The Great Thinkers of Artificial Intelligence",
+                "hours": "24",
+                "professors": [
+                    "Roberto Leyva",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Technologies That Are Changing All Aspects of the Industry",
+                "hours": "6",
+                "professors": [
+                    "Jorge Rodriguez",
+                    "Octavio Silva"
+                ]
+            },
+            {
+                "name": "Generation of Public Entrepreneurship Proposals with Technology",
+                "hours": "4",
+                "professors": [
+                    "Jorge Rodriguez",
+                    "Octavio Silva"
+                ]
+            }
+        ]
+    },
+    "TC1031": {
+        "subject": "Data Structures and Fundamental Algorithms Programming",
+        "group": 1,
+        "season": "winter",
+        "udc": 3,
+        "semester": 3,
+        "hours": 60,
+        "period": "PMT6",
+        "Professors": [
+            "Victor Manon",
+            "Juan Alvarado",
+            "Roberto Leyva",
+            "Mauricio Paletta",
+            "Jose Aguilera"
+        ]
+    },
+    "TC1032": {
+        "subject": "Minimum Systems Modeling and Fundamental Architecture",
+        "group": 1,
+        "season": "winter",
+        "udc": 1,
+        "semester": 3,
+        "hours": 20,
+        "period": "PMT2",
+        "Professors": [
+            "Yerly Flores",
+            "Jorge Rodriguez",
+            "Fernando Ruiz",
+            "Israel Tabarez"
+        ]
+    },
+    "TC1004B": {
+        "subject": "Implementation of Internet of Things",
+        "group": 1,
+        "season": "winter",
+        "udc": 6,
+        "semester": 3,
+        "hours": 120,
+        "period": "PMT5",
+        "topic": [
+            {
+                "name": "Boolean Algebra and Logic Gates",
+                "hours": "15",
+                "professors": [
+                    "Yerly Flores",
+                    "Jaime Lopez",
+                    "Israel Tabarez"
+                ]
+            },
+            {
+                "name": "Combinational Logic",
+                "hours": "15",
+                "professors": [
+                    "Yerly Flores",
+                    "Jaime Lopez",
+                    "Israel Tabarez"
+                ]
+            },
+            {
+                "name": "Synchronous Sequential Logic",
+                "hours": "5",
+                "professors": [
+                    "Yerly Flores",
+                    "Jaime Lopez",
+                    "Israel Tabarez"
+                ]
+            },
+            {
+                "name": "Registers and Counters",
+                "hours": "5",
+                "professors": [
+                    "Yerly Flores",
+                    "Jaime Lopez",
+                    "Israel Tabarez"
+                ]
+            },
+            {
+                "name": "Asynchronous Sequential Logic",
+                "hours": "5",
+                "professors": [
+                    "Yerly Flores",
+                    "Jaime Lopez",
+                    "Israel Tabarez"
+                ]
+            },
+            {
+                "name": "Analysis and Design of Databases",
+                "hours": "20",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Jose Aguilera",
+                    "Pedro Hernandez"
+                ]
+            },
+            {
+                "name": "Introduction to Interactive Design",
+                "hours": "10",
+                "professors": [
+                    "Victor Manon",
+                    "Juan Alvarado",
+                    "Roberto Leyva",
+                    "Mauricio Paletta",
+                    "Jose Aguilera"
+                ]
+            },
+            {
+                "name": "Management of Resources of a Computer System",
+                "hours": "15",
+                "professors": [
+                    "Jose Aguilera",
+                    "Pedro Hernandez",
+                    "Israel Tabarez"
+                ]
+            },
+            {
+                "name": "Internet of Things",
+                "hours": "30",
+                "professors": [
+                    "Fernando Ruiz",
+                    "Israel Tabarez"
+                ]
+            }
+        ]
+    },
+    "TI1015": {
+        "subject": "Software Requirements Analysis",
+        "group": 1,
+        "season": "winter",
+        "udc": 1,
+        "semester": 3,
+        "hours": 20,
+        "period": "PMT3",
+        "Professors": [
+            "Juan Alvarado",
+            "Roberto Leyva",
+            "Jose Aguilera",
+            "Luis Guadarrama",
+            "Pedro Hernandez",
+            "Maria Mirafuentes",
+            "Roberto Vera"
+        ]
+    },
+    "TC2038": {
+        "subject": "Advanced Algorithms Analysis and Design",
+        "group": 1,
+        "season": "winter",
+        "udc": 3,
+        "semester": 5,
+        "hours": 60,
+        "period": "PMT6",
+        "Professors": [
+            "Juan Alvarado",
+            "Mauricio Paletta",
+            "Jose Aguilera"
+        ]
+    },
+    "TC2007B": {
+        "subject": "Integration of Information Security in Networks and Software Systems",
+        "group": 1,
+        "season": "winter",
+        "udc": 8,
+        "semester": 5,
+        "hours": 160,
+        "period": "PMT4",
+        "topic": [
+            {
+                "name": "Interconnection Equipment Configuration",
+                "hours": "15",
+                "professors": [
+                    "Victor Manon",
+                    "Yerly Flores"
+                ]
+            },
+            {
+                "name": "Verification of Network Operation",
+                "hours": "20",
+                "professors": [
+                    "Victor Manon",
+                    "Yerly Flores"
+                ]
+            },
+            {
+                "name": "Security in Applications and Networks",
+                "hours": "25",
+                "professors": [
+                    "Victor Manon",
+                    "Octavio Silva"
+                ]
+            },
+            {
+                "name": "Mobile Development",
+                "hours": "50",
+                "professors": [
+                    "Roberto Leyva"
+                ]
+            },
+            {
+                "name": "Quality in Software",
+                "hours": "30",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            },
+            {
+                "name": "Support for Software Systems",
+                "hours": "20",
+                "professors": [
+                    "Juan Alvarado",
+                    "Luis Guadarrama"
+                ]
+            }
+        ]
+    },
+    "TC2008B": {
+        "subject": "Multi-agent Systems Modeling with Computer Graphics",
+        "group": 1,
+        "season": "winter",
+        "udc": 4,
+        "semester": 5,
+        "hours": 80,
+        "period": "PMT3",
+        "topic": [
+            {
+                "name": "Intelligent Agents",
+                "hours": "8",
+                "professors": [
+                    "Roberto Leyva",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Multi-agent Decision Making",
+                "hours": "12",
+                "professors": [
+                    "Roberto Leyva",
+                    "Mauricio Paletta"
+                ]
+            },
+            {
+                "name": "Introduction to Computer Graphics and Graphic Libraries",
+                "hours": "12",
+                "professors": [
+                    "Pedro Hernandez",
+                    "Ivan Olmos"
+                ]
+            },
+            {
+                "name": "Introduction to the Use of Graphic Libraries",
+                "hours": "12",
+                "professors": [
+                    "Pedro Hernandez",
+                    "Ivan Olmos"
+                ]
+            },
+            {
+                "name": "Mathematical Foundations",
+                "hours": "12",
+                "professors": [
+                    "Pedro Hernandez",
+                    "Ivan Olmos"
+                ]
+            },
+            {
+                "name": "Simulation and Drawing Process (Classic Pipeline)",
+                "hours": "12",
+                "professors": [
+                    "Pedro Hernandez",
+                    "Ivan Olmos"
+                ]
+            },
+            {
+                "name": "Advanced Programming in the GPU",
+                "hours": "12",
+                "professors": [
+                    "Israel Tabarez"
+                ]
+            }
+        ]
+    }
+}
