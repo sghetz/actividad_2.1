@@ -1,0 +1,276 @@
+{
+    "L00271734": {
+        "name": "Victor Manuel Manon Rojas",
+        "email": "vmanon@tec.mx",
+        "area": "Computer Science; networks",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 21
+    },
+    "L03524672": {
+        "name": "Juan Manuel Alvarado Lopez",
+        "email": "juan.alvarado.lopez@tec.mx",
+        "area": "Computer Science",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "X",
+        "maxUdc": 28
+    },
+    "L03518135": {
+        "name": "Marcial Roberto Leyva Fernandez",
+        "email": "rleyv@tec.mx",
+        "area": "Computer Science",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "X",
+        "maxUdc": 21
+    },
+    "L03542594": {
+        "name": "Mauricio Paletta Nannarone",
+        "email": "mauricio.paletta@tec.mx",
+        "area": "Computer Science",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03032035": {
+        "name": "Yerly Flores Garcia",
+        "email": "yerly_fgarcia@tec.mx",
+        "area": "Electronics; IoT; networks",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 0
+    },
+    "L03043605": {
+        "name": "Jaime Amado Lopez Gomez",
+        "email": "jaime.logo@tec.mx",
+        "area": "Social Sciences and Business",
+        "format": "physically",
+        "schedule": {
+            "monday": "07-11",
+            "wednesday": "07-11",
+            "friday": "07-11"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L01163675": {
+        "name": "Jorge Rodriguez Arce",
+        "email": "jorge_arce@tec.mx",
+        "area": "Electronics",
+        "format": "physically",
+        "schedule": {
+            "wednesday": "07-10"
+        },
+        "work": "UAEM",
+        "others": "SNI1",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L00534370": {
+        "name": "Jose Maria Aguilera Mendez",
+        "email": "jose.aguilera@tec.mx",
+        "area": "Computer Science",
+        "format": "physically",
+        "schedule": {
+            "monday": "09-13, 17-20",
+            "wednesday": "09-13, 17-20",
+            "friday": "09-13, 17-20"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03545506": {
+        "name": "Luis Alonso Guadarrama Varon",
+        "email": "luis_alfonsoguva@tec.mx",
+        "area": "Project Management",
+        "format": "physically",
+        "schedule": {
+            "monday": "07-09",
+            "tuesday": "07-09",
+            "wednesday": "07-09",
+            "thursday": "07-09",
+            "friday": "07-09"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03546291": {
+        "name": "Pedro Hernandez Oregel",
+        "email": "pedrohoregel@tec.mx",
+        "area": "DB; data mining",
+        "format": "physically",
+        "schedule": {
+            "monday": "07-11",
+            "tuesday": "07-11",
+            "wednesday": "07-11",
+            "thursday": "07-11",
+            "friday": "07-11"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03069916": {
+        "name": "Maria Jose Mirafuentes",
+        "email": "mmirafuentes@tec.mx",
+        "area": "Project Management",
+        "format": "physically",
+        "schedule": {
+            "friday": "11-13, 15-17"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03556523": {
+        "name": "Roberto Ismael Vera Popoca",
+        "email": "veraro@tec.mx",
+        "area": "Programming; DB; Web development",
+        "format": "physically",
+        "schedule": {
+            "monday": "07-11",
+            "tuesday": "07-11",
+            "wednesday": "07-11",
+            "thursday": "07-11",
+            "friday": "07-11"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03554774": {
+        "name": "Miguel Angel Santamaria Vilchis",
+        "email": "miguel.santamaria@tec.mx",
+        "area": "Computer Science",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L03557809": {
+        "name": "Jaime Octavio Silva Ruiz",
+        "email": "octavio.silva@tec.mx",
+        "area": "Standards; cybersecurity",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 14
+    },
+    "L01249086": {
+        "name": "Fernando Javier Ruiz Cid",
+        "email": "ernando.ruiz@tec.mx",
+        "area": "Electronics and Computing",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 7
+    },
+    "L01193656": {
+        "name": "Ivan Olmos Pineda",
+        "email": "iolmos@tec.mx",
+        "area": "Graphics; Algorithms; AI; ML",
+        "format": "remote",
+        "schedule": {
+            "monday": "17-19",
+            "thursday": "17-19"
+        },
+        "work": "UAP",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 7
+    },
+    "L03532458": {
+        "name": "Israel Tabarez Paz",
+        "email": "tabarezi@tec.mx",
+        "area": "Electronics and Computing",
+        "format": "physically",
+        "schedule": {
+            "monday": "7-21",
+            "tuesday": "7-21",
+            "wednesday": "7-21",
+            "thursday": "7-21",
+            "friday": "7-21"
+        },
+        "work": "null",
+        "others": "null",
+        "english": "null",
+        "maxUdc": 7
+    }
+}
