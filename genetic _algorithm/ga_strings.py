@@ -1,5 +1,6 @@
 import random
 import json
+import matplotlib.pyplot as plt
 
 # Define the JSON data for subjects, professors, and modules
 # These are simplified examples and may need to be adjusted based on the actual data format
@@ -50,14 +51,27 @@ def generate_subject_schedule(subject_data):
         professor = random.choice(subject_data["Professors"])
         day = random.sample(days, 2)
         duration = int((total_hours / period_duration_mapping[subject_data["period"]]) / 2)
-        return {"subject": subject_data["subject"], "professor": professor, "day": day, "start_hour": start_hour, "duration": duration, "period": subject_data["period"], "season": subject_data["season"]}
+        return {"subject": subject_data["subject"], 
+                "professor": professor, 
+                "day": day, 
+                "start_hour": start_hour, 
+                "duration": duration, 
+                "period": subject_data["period"], 
+                "season": subject_data["season"]
+                }
     elif "topic" in subject_data:
         topic_prof_map = []
         day = random.sample(days, 4)
         duration = int((total_hours / period_duration_mapping[subject_data["period"]]) / 4)
         for topic in subject_data["topic"]:
             topic_prof_map.append([topic["name"], random.choice(topic["professors"]), topic["hours"]])
-        return {"subject": subject_data["subject"], "topic/professors": topic_prof_map, "day": day, "start_hour": start_hour, "duration": duration, "period": subject_data["period"], "season": subject_data["season"]}
+        return {"subject": subject_data["subject"], 
+                "topic/professors": topic_prof_map, 
+                "day": day, "start_hour": start_hour, 
+                "duration": duration, 
+                "period": subject_data["period"], 
+                "season": subject_data["season"]
+                }
     else:
         professor = "Unknown"
         day = random.sample(days, 2)
@@ -75,12 +89,26 @@ def hard_constraints(schedule):
     # Verificar que no haya colisiones de horarios para el mismo profesor en diferentes materias
     professors_schedule = {}
     for subject_id in schedule:
-        if "professor" in schedule[subject_id]:
-            professor = schedule[subject_id]["professor"]
-            if professor in professors_schedule:
-                if any(schedule_overlap(professors_schedule[professor], schedule[subject_id])):
-                    return float('inf')  # Penalización por colisión de horarios
-            professors_schedule[professor] = schedule[subject_id]
+        if "professor" in schedule[subject_id]:  # Materia regular
+            professors = schedule[subject_id]["professor"]
+            if not isinstance(professors, list):
+                professors = [professors]  # Convertir a lista si es un solo profesor
+            for professor in professors:
+                if professor in professors_schedule:
+                    if any(schedule_overlap(professors_schedule[professor], schedule[subject_id])):
+                        return float('inf')  # Penalización por colisión de horarios
+                professors_schedule[professor] = schedule[subject_id]
+        elif "topic/professors" in schedule[subject_id]:  # Módulo
+            topics = schedule[subject_id]["topic/professors"]
+            for topic_info in topics:
+                professors = topic_info[1]  # El profesor está en la posición 1 de la lista
+                if not isinstance(professors, list):
+                    professors = [professors]  # Convertir a lista si es un solo profesor
+                for professor in professors:
+                    if professor in professors_schedule:
+                        if any(schedule_overlap(professors_schedule[professor], schedule[subject_id])):
+                            return float('inf')  # Penalización por colisión de horarios
+                    professors_schedule[professor] = schedule[subject_id]
     return 0
 
 def soft_constraints(schedule):
@@ -128,6 +156,7 @@ def mutate(schedule, mutation_rate=0.1):
 # Algoritmo genético completo
 def genetic_algorithm(subjects, population_size, generations):
     population = generate_initial_population(subjects, population_size)
+    best_scores = []
     for _ in range(generations):
         new_population = []
         for _ in range(population_size // 2):
@@ -136,13 +165,24 @@ def genetic_algorithm(subjects, population_size, generations):
             child2 = crossover(parent2, parent1)
             new_population.extend([mutate(child1), mutate(child2)])
         population = new_population
-    best_schedule = min(population, key=lambda x: sum(evaluate_schedule(x)))
-    return best_schedule
+        best_schedule = min(population, key=lambda x: sum(evaluate_schedule(x)))
+        best_scores.append(sum(evaluate_schedule(best_schedule)))
+    return best_schedule, best_scores
+
+
+def plot_evolution(best_scores):
+    plt.figure(figsize=(10, 6))
+    plt.plot(best_scores, marker='o', color='b', linestyle='-')
+    plt.title('Evolution of Best Score')
+    plt.xlabel('Generation')
+    plt.ylabel('Best Score')
+    plt.grid(True)
+    plt.show()
 
 # Ejemplo de uso del algoritmo genético
 if __name__ == "__main__":
     subjects = subjects_json
-    best_solution = genetic_algorithm(subjects, population_size=5, generations=1)
+    best_solution, best_scores = genetic_algorithm(subjects, population_size=5, generations=1)
     print("Best schedule:")
     for subject_id in best_solution:
         print(f"{subject_id}: {best_solution[subject_id]}")
