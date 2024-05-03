@@ -75,7 +75,14 @@ def generate_subject_schedule(subject_data):
     else:
         professor = "Unknown"
         day = random.sample(days, 2)
-        return {"subject": subject_data["subject"], "professor": professor, "day": day, "start_hour": start_hour, "duration": duration, "period": subject_data["period"], "season": subject_data["season"]}
+        return {"subject": subject_data["subject"], 
+                "professor": professor, 
+                "day": day, 
+                "start_hour": start_hour, 
+                "duration": duration, 
+                "period": subject_data["period"], 
+                "season": subject_data["season"]
+                }
 
 # Function to generate the initial population
 def generate_initial_population(subjects, population_size):
@@ -86,18 +93,15 @@ def generate_initial_population(subjects, population_size):
     return population
 
 def hard_constraints(schedule):
-    # Verificar que no haya colisiones de horarios para el mismo profesor en diferentes materias
+    # Verificar que no haya colisiones de horarios para el mismo profesor en diferentes materias o módulos
     professors_schedule = {}
     for subject_id in schedule:
         if "professor" in schedule[subject_id]:  # Materia regular
-            professors = schedule[subject_id]["professor"]
-            if not isinstance(professors, list):
-                professors = [professors]  # Convertir a lista si es un solo profesor
-            for professor in professors:
-                if professor in professors_schedule:
-                    if any(schedule_overlap(professors_schedule[professor], schedule[subject_id])):
-                        return float('inf')  # Penalización por colisión de horarios
-                professors_schedule[professor] = schedule[subject_id]
+            professor = schedule[subject_id]["professor"]
+            if professor in professors_schedule:
+                if any(schedule_overlap(professors_schedule[professor], schedule[subject_id])):
+                    return float('inf')  # Penalización por colisión de horarios
+            professors_schedule[professor] = schedule[subject_id]
         elif "topic/professors" in schedule[subject_id]:  # Módulo
             topics = schedule[subject_id]["topic/professors"]
             for topic_info in topics:
@@ -110,6 +114,7 @@ def hard_constraints(schedule):
                             return float('inf')  # Penalización por colisión de horarios
                     professors_schedule[professor] = schedule[subject_id]
     return 0
+
 
 def soft_constraints(schedule):
     early_semester_penalty = sum(1 for subject_id in schedule if subjects_json[subject_id]["semester"] <= 2 and schedule[subject_id]["start_hour"] + schedule[subject_id]["duration"] > 19) * 5
@@ -137,17 +142,17 @@ def select_parents(population, tournament_size=3):
     return selected_parents
 
 def crossover(parent1, parent2):
-    crossover_point = random.randint(1, len(parent1) - 1)
     child_schedule = {}
-    for i, subject_id in enumerate(parent1):
-        if i < crossover_point:
+    for subject_id in parent1:
+        if random.choice([True, False]):  # Se elige aleatoriamente un gen del padre 1 o padre 2
             child_schedule[subject_id] = parent1[subject_id]
         else:
             child_schedule[subject_id] = parent2[subject_id]
     return child_schedule
 
+
 def mutate(schedule, mutation_rate=0.1):
-    mutated_schedule = schedule.copy()
+    mutated_schedule = dict(schedule)  # Convertir a diccionario
     for subject_id in mutated_schedule:
         if random.random() < mutation_rate:
             mutated_schedule[subject_id] = generate_subject_schedule(subjects_json[subject_id])
@@ -186,3 +191,8 @@ if __name__ == "__main__":
     print("Best schedule:")
     for subject_id in best_solution:
         print(f"{subject_id}: {best_solution[subject_id]}")
+print(len(best_solution))
+
+""" j = json.dumps(best_solution, indent=4, default=str)
+with open('json\\time_table.json', 'w+') as f:
+    print(j, file=f) """
